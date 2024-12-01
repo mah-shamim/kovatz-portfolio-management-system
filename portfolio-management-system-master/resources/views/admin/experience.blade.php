@@ -13,7 +13,7 @@
     <link href="../css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
     <link href="../css/demo.css" rel="stylesheet" />
     <style>
-        
+
 
 .card-padding{
    padding:10px 30px!important;
@@ -27,7 +27,7 @@
 <body>
     <div class="wrapper" style="background-color: black;">
     <div class="sidebar" data-image="../assets/img/sidebar-5.jpg">
-            
+
             <div class="sidebar-wrapper" style="background-color: black;">
                 <div class="logo">
                     <a href="javascript:;" class="simple-text">
@@ -88,8 +88,8 @@
                         </a>
                     </li>
                     <li class="nav-item  active-pro">
-                                <a class="nav-link" href="<?php echo url('logout') ?>">
-                            <p>HARSH CHALUDIA</p>
+                                <a class="nav-link" href="<?php echo url('logout') ?>" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
+                            <p>Logout</p>
                         </a>
                     </li>
                 </ul>
@@ -119,7 +119,7 @@
                                 <a class="nav-link" href="#pablo">
 <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
     Logout
-</a>    
+</a>
 <form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
     {{ csrf_field() }}
 </form>                                </a>
@@ -166,8 +166,8 @@
 <button type="submit" name="up" value="{{$experiences->experience_id}}">UPDATE</button></td>
     </form></tr>
 
-                                        
-                                    
+
+
                                             @endforeach
 \
 
@@ -190,13 +190,13 @@
             <footer class="footer">
                 <div class="container-fluid">
                     <nav>
-                        
+
                         <p class="copyright text-center">
                             ©
                             <script>
                                 document.write(new Date().getFullYear())
                             </script>
-                            <a href="http://itsourcecode.com">Portfolio Management Syste </a>. All Rights Reserved.
+                            <a href="http://haqueitsolution.com">Portfolio Management System </a>. All Rights Reserved.
                         </p>
                     </nav>
                 </div>

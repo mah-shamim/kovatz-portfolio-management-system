@@ -17,7 +17,7 @@
 <body>
     <div class="wrapper" style="background-color: black;">
     <div class="sidebar" data-image="../assets/img/sidebar-5.jpg">
-            
+
             <div class="sidebar-wrapper" style="background-color: black;">
                 <div class="logo">
                     <a href="javascript:;" class="simple-text">
@@ -78,8 +78,8 @@
                         </a>
                     </li>
                     <li class="nav-item  active-pro">
-                                <a class="nav-link" href="<?php echo url('logout') ?>">
-                            <p>HARSH CHALUDIA</p>
+                                <a class="nav-link" href="<?php echo url('logout') ?>" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
+                            <p>Logout</p>
                         </a>
                     </li>
                 </ul>
@@ -108,7 +108,7 @@
                             <li class="nav-item">
                             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
     Logout
-</a>    
+</a>
 <form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
     {{ csrf_field() }}
 </form>
@@ -127,13 +127,13 @@
             <footer class="footer">
                 <div class="container-fluid">
                     <nav>
-                        
+
                         <p class="copyright text-center">
                             ©
                             <script>
                                 document.write(new Date().getFullYear())
                             </script>
-                            <a href="http://itsourcecode.com">Portfolio Management Syste </a>. All Rights Reserved.
+                            <a href="http://haqueitsolution.com">Portfolio Management System </a>. All Rights Reserved.
                         </p>
                     </nav>
                 </div>
